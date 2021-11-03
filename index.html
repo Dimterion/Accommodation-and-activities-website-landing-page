@@ -1,43 +1,90 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta charset="UTF-8">
-        <title>Booki website</title>
-        <link href="css/normalize.css" type="text/css" rel="stylesheet" />
-        <link href="css/style.css" type="text/css" rel="stylesheet" />
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-        <script src="https://kit.fontawesome.com/d21300426d.js" crossorigin="anonymous"></script>
-    </head>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booki</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d21300426d.js" crossorigin="anonymous"></script>
+</head>
 
-    <body>
+<body>
+    
+<!----- logo + Navigation ----->
 
     <header>
-        <nav>
-            <a href="index.html"><img src="assets/Booki.png" alt="Booki website logo"></a>
-            <div class="nav-links">
-                <ul>
-                    <li><a href="">Accommodations</a></li>
-                    <li><a href="">Activities</a></li>
 
-                    <!-- HOW TO ADD THE LINE ABOVE LI-ELEMENTS AT THE UPPER SIDE OF THE PAGE? -->
-
-                </ul>
+        <div class="nav-wrapper">
+            <div class="left-side">
+                <div class="brand">
+                    <div><a href="index.html"><img src="images/Booki.png" alt="Logo"></a></div>
+                </div>
             </div>
-        </nav>
-    <div class="text-box">
-        <h1>Find a place for your dream vacation</h1>
-        <p>Downdtown or in nature</p>
-    </div>
+
+            <nav class="right-side">
+                <div class="nav-link-wrapper" id="acc">
+                    <a href="">Accommodations</a>
+                </div>
+                <div class="nav-link-wrapper" id="act">
+                    <a href="">Activities</a>
+                </div>
+            </nav>
+        </div>
+
     </header>
 
-    <form>
-        <i class="fas fa-map-marker-alt"></i>
-        <input type="text" placeholder="Search">
-        <button type="search">Search</button>
-    </form>
+<!----- Search ----->
 
-    </body>
-</html>
+    <section class="search">
+
+        <h1>Find a place for your dream vacation</h1>
+        <p>Dowtown or in nature</p>
+
+        <form id="computer">
+            <label><i class="fas fa-map-marker-alt"></i></label>
+            <input type="text" value="Marseille, France">
+            <button type="submit">Search</button>
+        </form>
+
+        <form id="mobile">
+            <label><i class="fas fa-map-marker-alt"></i></label>
+            <input type="text" value="Marseille, France">
+            <button type="submit"><i class="fas fa-search"></i></button>
+        </form>
+
+    </section>
+
+<!----- Filters ----->
+
+<h2>Filters</h2>
+
+    <section class="filters">
+
+        <div class="row">
+            <div class="filters-col">
+                <i class="fas fa-money-bill-wave"></i>
+                <h3>Low cost</h3>
+            </div>
+            <div class="filters-col">
+                <i class="fas fa-child"></i>
+                <h3>Family-friendly</h3>
+            </div>
+            <div class="filters-col">
+                <i class="fas fa-heart"></i>
+                <h3>Romantic</h3>
+            </div>
+            <div class="filters-col">
+                <i class="fas fa-dog"></i>
+                <h3>Pets allowed</h3>
+            </div>
+        </div>
+
+    </section>
+
+    <p>More than 500 accommodations are available in this city</p>
+
+</body>
