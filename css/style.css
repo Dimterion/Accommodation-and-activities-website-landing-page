@@ -143,16 +143,16 @@ h2{
   padding-left: 10px;
   font-size: 16px;
 }
-#one{
+#cost{
   flex-basis: 142px;
 }
-#two{
+#family{
   flex-basis: 190px;
 }
-#three{
+#romantic{
   flex-basis: 145px;
 }
-#four{
+#pets{
   flex-basis: 180px;
 }
 .fas.fa-money-bill-wave{
@@ -168,100 +168,18 @@ h2{
   h1{
       font-size: 16px;
   }
-  form{
-      margin-top: 15px;
-      font-size: 14px;
-  }
-  a{
-      font-size: 14px;
-  }
-  p{
-      font-size: 14px;
-      padding-top: 20px;
-  }
-  form button{
-      border-radius: 15px;
-      padding: 10px 20px 10px 15px;
-      margin-left: -30px;
-  }
-  form input{
-      border: 2px solid #F2F2F2;
-      border-left: none;
-      border-right: none;
-      padding: 14px 10px 12px;
-  }
-  form i{
-      padding: 16px 19px 18px 15px;
-      margin-right: -5px;
-      margin-bottom: -5px;
-  }
-  .nav-link-wrapper{
-      margin: 0px 10px;
-      padding-left: 10px;
-  }
-  .brand{
-      margin-top: -10px;
-      margin-right: 40px;      
-  }
-  .nav-wrapper{
-      flex-direction: column;
-      text-align: center;
-  }
-  .right-side{
-      justify-content: center;
-      padding-left: 90px;
-      padding-top: 20px;
-      padding-bottom: 10px;
-  }
-  .brand img{
-      max-width: 50%;
-      height: auto;
-  }
-  .search{
-      display: flex;
-      position: relative;
-      flex-direction: column;
-      margin-top: -60px;
-      margin-left: -34px;
-      padding: 50px 90px;
-  }
-  .fas.fa-search{
-      background: #0065FC;
-      padding: 0px;
-  }
-  .search p{
-      margin-top: -5px;
-  }
-  #acc a{
-      color: #0065FC;
-  }
-  #computer{
-      display: none;
-  }
-  #mobile{
-      display: flex;
-  }
-  #acc{
-      border-bottom: 3px solid #0065FC;
-      padding: 0px 20px 10px 30px;
-      margin-right: 0px;
-  }
-  #act{
-      border-bottom: 3px solid #F2F2F2;
-      padding: 0px 40px 10px 30px;
-      margin-left: 0px;
-  }
 }
 
 /*----- Phones -----*/
 
 @media(max-width: 768px){
   h1{
-      font-size: 14px;
+      font-size: 18px;
   }
   form{
-      margin-top: 15px;
+      margin-top: 10px;
       font-size: 14px;
+      margin: 10px 0px -15px -3px;
   }
   a{
       font-size: 14px;
@@ -270,21 +188,45 @@ h2{
       font-size: 14px;
       padding-top: 20px;
   }
+  .info p{
+    font-size: 15px;
+  }
   form button{
       border-radius: 15px;
       padding: 10px 20px 10px 15px;
-      margin-left: -30px;
+      margin-left: -15px;
   }
   form input{
       border: 2px solid #F2F2F2;
       border-left: none;
       border-right: none;
-      padding: 14px 10px 12px;
+      padding: 14px 15px 11px;
   }
   form i{
       padding: 16px 19px 18px 15px;
       margin-right: -5px;
       margin-bottom: -5px;
+  }
+  .filters{
+    margin-left: -16px;
+  }
+  .row{
+    display: flex;
+    margin-left: -50px;
+    margin-top: 30px;
+  }
+  .filters-col{
+    margin-top: 10px;
+    margin-left: 14px;
+  }
+  .filters-col h3{
+    font-size: 14px;
+  }
+  .filters h2{
+    top: 30px;
+    position: relative;
+    margin-left: -32px;
+    font-size: 16px;
   }
   .nav-link-wrapper{
       margin: 0px 10px;
@@ -300,31 +242,28 @@ h2{
   }
   .right-side{
       justify-content: center;
-      padding-left: 90px;
-      padding-top: 20px;
-      padding-bottom: 10px;
+      padding: 25px 0px 15px 30px;
   }
   .brand img{
       max-width: 50%;
-      height: auto;
   }
   .search{
       display: flex;
       position: relative;
       flex-direction: column;
-      margin-top: -60px;
-      margin-left: -34px;
-      padding: 50px 90px;
+      margin-left: -48px;
+      padding: 10px 90px;
   }
   .fas.fa-search{
       background: #0065FC;
       padding: 0px;
   }
   .search p{
-      margin-top: -5px;
+      margin-top: -10px;
   }
-  #acc a{
-      color: #0065FC;
+  .info{
+    margin-left: -37px;
+    margin-top: -25px;
   }
   #computer{
       display: none;
@@ -332,14 +271,33 @@ h2{
   #mobile{
       display: flex;
   }
-  #acc{
-      border-bottom: 3px solid #0065FC;
-      padding: 0px 20px 10px 30px;
-      margin-right: 0px;
+  .nav-link-wrapper a{
+        border-bottom: 3px solid #F2F2F2;
+        margin: 0px -10px 0px -60px;
+        padding: 0px 40px 10px 80px;
   }
-  #act{
-      border-bottom: 3px solid #F2F2F2;
-      padding: 0px 40px 10px 30px;
-      margin-left: 0px;
+  .nav-link-wrapper a:hover{
+    padding-top: 0px;
+    border-top: none;
+    border-bottom: 3px solid #0065FC;
+  }
+  #cost{
+    order: 1;
+    flex-basis: 130px;
+  }
+  #romantic{
+    order: 2;
+    flex-basis: 150px;
+  }
+  #family{
+    order: 3;
+    flex-basis: 185px;
+  }
+  #pets{
+    order: 4;
+    flex-basis: 205px;
+  }
+  br{
+    display: none;
   }
 }
