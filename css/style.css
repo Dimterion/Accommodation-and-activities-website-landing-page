@@ -1,5 +1,12 @@
-*{
+html{
   box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+*{
   font-family: 'Raleway', sans-serif;
 }
 a{
@@ -87,6 +94,7 @@ form i{
 }
 h2{
   display: inline-block;
+  font-size: 22px;
 }
 #mobile{
   display: none;
@@ -175,8 +183,7 @@ h2{
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-evenly;
-  width: 95%;
-  margin-left: -5%;
+  width: 90%;
 }
 .marseille{
   display: flex;
@@ -187,11 +194,12 @@ h2{
   width: 55%;
   margin-left: 5%;
   padding: 0% 2% 0% 1%;
+  flex-basis: 60%;
 }
 .card {
   flex-basis: 30%;
   border-radius: 20px;
-  margin: 1% 0% -15% 3%;
+  margin: 6% 0% -12% 1%;
   padding-bottom: 0%;
   background: white;
   display: flex;
@@ -200,6 +208,7 @@ h2{
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.5s;
   height: 44%;
+  flex-grow: 1;
 }
 .marseille h2{
   margin-left: 3%;
@@ -208,7 +217,7 @@ h2{
 }
 .marseille h3{
   margin-left: 3%;
-  padding-bottom: 3%;
+  margin-top: 8%;
   font-size: 18px;
 }
 h4{
@@ -238,7 +247,7 @@ h4{
   padding: 1% 1% 0% 0%;
 }
 .fas.fa-chart-line{
-  margin: 7% 0% 0% 57%;
+  margin: -9% 0% 0% 86%;
   font-size: 26px;
 }
 #aub{
@@ -296,50 +305,95 @@ h4{
   flex-wrap: wrap;
   background-color: #F2F2F2;
   border-radius: 25px;
-  width: 27%;
-  margin: 0% -10% 0% 10%;
-  height: 658px;
+  margin: 0% -5% 0% 0%;
+  flex-basis: 35%;
 }
 
 /*----- Activities -----*/
 
 .activities{
   display: flex;
-  flex-direction: column;
-  width: 80%;
-  margin: auto;
-  text-align: left;
-  padding-top: 50px;
-}
-.act-row{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  flex-flow: column wrap;
+  align-content: space-between;
+  margin: 3% 0% 0% 5%;
 }
 .act-col{
-  flex-basis: 32%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  height: 580px;
+  width: 40%;
+  margin-left: -2%;
+}
+.act-col .act-row:nth-child(1){
+  height: 93%;
+}
+#port{
+  height: 489px;
+  object-fit: cover;
+}
+.act-col .act-row:nth-child(2){
+  height: 45%;
+  margin: 0% 0% 0% 5%;
+}
+#fort{
+  height: 215px;
+  object-fit: cover;
+}
+.act-col .act-row:nth-child(3){
+  height: 40%;
+  margin: 0% 0% 8% 5%;
+}
+#island{
+  height: 187px;
+  object-fit: cover;
+}
+.act-col .act-row:nth-child(4){
+  height: 93%;
+}
+#national{
+  height: 489px;
+  object-fit: cover;
+}
+.act-col .act-row:nth-child(5){
+  height: 37%;
+  margin: 0% 0% 0% 5%;
+}
+#notre{
+  height: 171px;
+  object-fit: cover;
+}
+#longchamp{
+  height: 230px;
+  object-fit: cover;
+}
+.act-col .act-row:nth-child(6){
+  height: 48%;
+  margin: 0% 0% 8% 5%;
+}
+.act-row{
   border-radius: 10px;
-  margin-bottom: 30px;
-  position: relative;
+  margin: 0% 0% 8% 5%;
   overflow: hidden;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  width: 55%;
 }
-.act-col img{
+.act-row img{
   display: block;
   width: 100%;
 }
-.act-col:hover{
+.act-row:hover{
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.5);
+  transition: 0.5s;
 }
 .title{
-  margin-left: 50px;
-  margin-bottom: 10px;
+  margin: -2% 0% 0% 10%;
 }
 
 /*----- Tablets -----*/
 
-@media(min-width: 768px) and (max-width: 992px){
+@media (max-width: 992px){
   h1{
       font-size: 16px;
   }
