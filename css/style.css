@@ -70,7 +70,7 @@ nav a {
 }
 
 nav a:hover {
-  border-top: 2px solid #0065FC;
+  border-top: 4px solid #0065FC;
   color: #0065FC;
 }
 
@@ -353,7 +353,7 @@ form button {
 }
 
 .acc-mars h3 {
-  margin: 1% 0 5% 2%;
+  margin: 1% 0 50% 2%;
 }
 
 @media(max-width: 768px) {
