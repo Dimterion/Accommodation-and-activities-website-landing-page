@@ -25,8 +25,8 @@
 
       <nav>
 
-        <a href="#">Accommodations</a>
-        <a href="#">Activities</a>
+        <a href="#acc-link">Accommodations</a>
+        <a href="#act-link">Activities</a>
 
       </nav>
 
@@ -40,7 +40,7 @@
 
       <p>Dowtown or in nature</p>
 
-      <form>
+      <form action="placeholder.html" method="post">
         <label><i class="fas fa-map-marker-alt"></i></label>
         <input type="text" value="Marseille, France">
         <button type="submit"><span>Search</span><i class="fas fa-search"></i></button>
@@ -82,7 +82,7 @@
 
     <!----- Accommodations ----->
 
-    <section class="accommodations">
+    <section id="acc-link" class="accommodations">
 
       <!----- Accommodations in Marseille ----->
 
@@ -172,7 +172,7 @@
 
         </div>
 
-        <h3>Show more</h3>
+        <a href="#"><h3>Show more</h3></a>
 
       </article>
 
@@ -184,7 +184,7 @@
           
           <div class="pop-head">
             <h2>Most popular</h2>
-            <i class="fas fa-chart-line"></i>
+            <a href="#"><i class="fas fa-chart-line"></i></a>
           </div>
 
           <div class="pop-col">
@@ -238,7 +238,7 @@
 
     <!----- Activities ----->
 
-    <section class="activities">
+    <section id="act-link" class="activities">
 
       <h2>Activities in Marseille</h2>
 
@@ -277,6 +277,37 @@
       </article>
 
     </section>
+
+    <!----- Footer ----->
+
+    <footer>
+
+        <div class="about">
+            <h5>About</h5>
+            <ul>
+                <li><a href="#">Site Map</a></li>
+                <li><a href="#">General Terms and Conditions</a></li>
+                <li><a href="#">Data and Privacy</a></li>
+            </ul>
+        </div>
+
+        <div class="our-acc">
+            <h5>Our Accommodations</h5>
+            <ul>
+                <li><a href="#">Quality Assessment</a></li>
+                <li><a href="#">You have a hotel?</a></li>
+            </ul>
+        </div>
+
+        <div class="assistance">
+            <h5>Assistance</h5>
+            <ul>
+                <li><a href="#">Help Desk</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+
+    </footer>
 
   </body>
 

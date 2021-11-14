@@ -362,6 +362,11 @@ form button {
   }
 }
 
+.acc-mars a {
+  text-decoration: none;
+  color: black;
+}
+
 .mars-cards {
   display: flex;
   flex-flow: row wrap;
@@ -464,10 +469,11 @@ aside {
   display: inline-flex;
   justify-content: space-around;
   align-items: center;
+  margin: 7% -7% -3% -7%;
 }
 
-.pop-head {
-  margin: 7% -7% -3% -7%;
+.pop-head a {
+  color: black;
 }
 
 .pop-head h2 {
@@ -542,7 +548,7 @@ aside {
 @media(max-width: 768px) {
   .activities {
       margin: 10% 0 0 0;
-      height: auto;
+      height: 1760px;
   }
 }
 
@@ -768,4 +774,52 @@ aside {
 
 .longchamp:hover {
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.5);
+}
+
+/*----- Footer -----*/
+
+footer {
+  display: flex;
+  flex-flow: row wrap;
+  background-color: #F2F2F2;
+  margin-top: 50px;
+}
+
+h5 {
+  font-size: 16px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul a {
+  text-decoration: none;
+  color: black;
+}
+
+.about {
+  margin: 10px 20% 10px 40px;
+}
+
+.about li {
+  margin-bottom: 10px;
+}
+
+.our-acc {
+  margin: 10px 20% 10px 40px;
+}
+
+.our-acc li {
+  margin-bottom: 10px;
+}
+
+.assistance {
+  margin: 10px 10px 10px 40px;
+}
+
+.assistance li {
+  margin-bottom: 10px;
 }
