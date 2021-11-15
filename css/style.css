@@ -12,7 +12,7 @@ html {
   font-family: 'Raleway', sans-serif;
 }
 
-/*----- logo + Navigation -----*/
+/*-- logo + Navigation --*/
 
 header {
   display: flex;
@@ -82,7 +82,7 @@ nav a:hover {
   }
 }
 
-/*----- H1 + Search -----*/
+/*-- H1 + Search --*/
 
 .search {
   margin: 0 40px;
@@ -175,7 +175,7 @@ form button {
   }
 }
 
-/*----- Filters -----*/
+/*-- Filters --*/
 
 .filters {
   display: flex;
@@ -313,7 +313,7 @@ form button {
   }
 }
 
-/*----- Accommodations -----*/
+/*-- Accommodations --*/
 
 .accommodations {
   margin: 0 40px 50px;
@@ -330,7 +330,7 @@ form button {
   }
 }
 
-/*----- Accommodations in Marseille -----*/
+/*-- Accommodations in Marseille --*/
 
 .acc-mars {
   display: flex;
@@ -387,6 +387,12 @@ form button {
   margin: 2% 0;
 }
 
+@media(max-width: 992px) {
+  .card {
+      width: 30%;
+  }
+}
+
 @media(max-width: 768px) {
   .card {
       width: 95%;
@@ -401,6 +407,12 @@ form button {
   object-fit: cover;
   width: 100%;
   height: 180px;
+}
+
+@media(max-width: 992px) {
+  .card img {
+      height: 160px;
+  }
 }
 
 .container {
@@ -439,7 +451,7 @@ form button {
   color: #F2F2F2;
 }
 
-/*----- Most Popular -----*/
+/*-- Most Popular --*/
 
 aside {
   background-color: #F2F2F2;
@@ -504,9 +516,17 @@ aside {
   margin: 8% 0 0 0;
 }
 
+@media(max-width: 992px) {
+  .popular-card {
+      width: 88%;
+      height: 175px;
+  }
+}
+
 @media(max-width: 768px) {
   .popular-card {
       width: 90%;
+      height: auto;
   }
 }
 
@@ -514,6 +534,13 @@ aside {
   object-fit: cover;
   width: 35%;
   height: 180px;
+}
+
+@media(max-width: 992px) {
+  .popular-card img {
+      width: 40%;
+      height: auto;
+  }
 }
 
 @media(max-width: 768px) {
@@ -539,7 +566,7 @@ aside {
   color: #F2F2F2;
 }
 
-/*----- Activities -----*/
+/*-- Activities --*/
 
 .activities {
   margin: 0 40px;
@@ -776,7 +803,7 @@ aside {
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.5);
 }
 
-/*----- Footer -----*/
+/*-- Footer --*/
 
 footer {
   display: flex;
@@ -804,12 +831,24 @@ ul a {
   margin: 10px 20% 10px 40px;
 }
 
+@media(max-width: 992px) {
+  .about {
+    margin-right: 10%;
+  }
+}
+
 .about li {
   margin-bottom: 10px;
 }
 
 .our-acc {
   margin: 10px 20% 10px 40px;
+}
+
+@media(max-width: 992px) {
+  .our-acc {
+    margin-right: 10%;
+  }
 }
 
 .our-acc li {
