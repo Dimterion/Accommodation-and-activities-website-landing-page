@@ -12,6 +12,16 @@ html {
   font-family: 'Raleway', sans-serif;
 }
 
+@media (min-width: 768px) and (max-width: 992px) {
+  h4 {
+    font-size: 14px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+}
+
 /*-- logo + Navigation --*/
 
 header {
@@ -59,14 +69,21 @@ nav a {
   nav a {
       text-decoration: none;
       border-bottom: 3px solid #F2F2F2;
+      font-size: 16px;
   }
 
   nav a:nth-child(1) {
-      padding: 0 20px 10px;
+      padding: 0 25px 10px;
   }
   
   nav a:nth-child(2) {
-      padding: 0 30px 10px;
+      padding: 0 55px 10px;
+  }
+}
+
+@media(max-width: 370px) {
+  nav a {
+    font-size: 14px;
   }
 }
 
@@ -87,6 +104,18 @@ nav a:hover {
 
 .search {
   margin: 0 40px;
+}
+
+@media(max-width: 768px) {
+  .search {
+    margin: 0 30px;
+  }
+}
+
+@media(max-width: 370px) {
+  .search {
+    margin: 0 20px;
+  }
 }
 
 h1 {
@@ -136,7 +165,7 @@ form input {
 
 @media(max-width: 768px) {
   form input {
-      padding: 14px 9px;
+      padding: 14px 7px;
       font-size: 15px;
       bottom: 1px;
       width: 70%;
@@ -194,7 +223,13 @@ form button {
   .filters {
       flex-direction: column;
       align-items: flex-start;
-      margin: 0px 40px;
+      margin: 20px 30px 0;
+  }
+}
+
+@media(max-width: 370px) {
+  .filters {
+      margin: 20px 20px 0;
   }
 }
 
@@ -214,27 +249,44 @@ form button {
   }
   .filters-row div:nth-child(1) {
       order: 1;
-      width: 40%;
+      width: 130px;
   }
   .filters-row div:nth-child(2) {
       order: 3;
-      width: 55%;
+      width: 175px;
   }
   .filters-row div:nth-child(3) {
       order: 2;
-      width: 45%;
+      width: 155px;
   }
   .filters-row div:nth-child(4) {
       order: 4;
-      width: 65%;
+      width: 195px;
+  }
+}
+
+@media(max-width: 370px) {
+  .filters-row div:nth-child(1) {
+      width: 109px;
+  }
+  .filters-row div:nth-child(2) {
+      width: 160px;
+  }
+  .filters-row div:nth-child(3) {
+      width: 111px;
+  }
+  .filters-row div:nth-child(4) {
+      width: 175px;
   }
 }
 
 .filters-col {
   display: flex;
   flex-flow: row wrap;
+  align-content: center;
   align-items: center;
-  border: 4px solid #F2F2F2;
+  height: 60px;
+  border: 3px solid #F2F2F2;
   border-radius: 50px;
   margin: 0 0 0 2%;
   padding: 0 2% 0 0;
@@ -250,7 +302,7 @@ form button {
   .filters-col {
       margin: 0 4% 4% 0;
       padding: 0;
-      height: 50px;
+      height: 45px;
   }
 }
 
@@ -258,9 +310,21 @@ form button {
   margin-left: 5%;
 }
 
+@media(max-width: 992px) {
+  .filters-col h3 {
+      font-size: 15px;
+  }
+}
+
 @media(max-width: 768px) {
   .filters-col h3 {
       font-size: 15px;
+  }
+}
+
+@media(max-width: 370px) {
+  .filters-col h3 {
+      font-size: 14px;
       margin: 0;
   }
 }
@@ -284,6 +348,13 @@ form button {
       height: 45px;
       width: 45px;
       margin: -5% 0 -5% -2%;
+  }
+}
+
+@media(max-width: 370px) {
+  .filters-col i {
+      height: 40px;
+      width: 40px;
   }
 }
 
@@ -316,7 +387,7 @@ form button {
   }
 
   .info p {
-      margin: -5% 0 0 10%;
+      margin: -5% 0 0 15%;
   }
 }
 
@@ -367,6 +438,12 @@ form button {
 
 .acc-mars h3 {
   margin: 1% 0 35% 2%;
+}
+
+@media(max-width: 992px) {
+  .acc-mars h3 {
+      margin: 3% 0 33% 2%;
+  }
 }
 
 @media(max-width: 768px) {
@@ -475,6 +552,7 @@ aside {
 @media(max-width: 768px) {
   aside {
       border-radius: 0;
+      margin-bottom: 5%;
       width: 100%;
   }
 }
@@ -497,17 +575,35 @@ aside {
   margin: 7% -7% -3% -7%;
 }
 
+@media(max-width: 992px) {
+  .pop-head {
+    margin: 5% -7% -7% -7%;
+  }
+}
+
+@media(max-width: 768px) {
+  .pop-head {
+    margin: 5% -7% -3% -7%;
+  }
+}
+
 .pop-head a {
   color: black;
 }
 
 .pop-head h2 {
-  margin: 0 20% 0 0;
+  margin: 0 15% 0 0;
 }
 
 @media(max-width: 992px) {
   .pop-head h2 {
     margin: 0 1% 0 0;
+  }
+}
+
+@media(max-width: 768px) {
+  .pop-head h2 {
+    margin: 0 15% 0 0;
   }
 }
 
@@ -538,7 +634,8 @@ aside {
 @media(max-width: 992px) {
   .popular-card {
       width: 88%;
-      height: 175px;
+      height: 165px;
+      margin-top: 9%;
   }
 }
 
@@ -546,6 +643,7 @@ aside {
   .popular-card {
       width: 90%;
       height: auto;
+      margin-top: 5%;
   }
 }
 
@@ -575,12 +673,29 @@ aside {
 .popular-container {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
-  margin: 0 0 0 4%;
+  justify-content: space-between;
+  margin: 3% 0 3% 4%;
 }
 
 .popular-container h4 {
-  margin: 1% 1%;
+  margin: 0;
+  width: 165px;
+}
+
+@media(max-width: 992px) {
+  .popular-container h4 {
+      width: auto;
+  }
+}
+
+.popular-container p {
+  margin: -15px 0 30px 0;
+}
+
+@media(max-width: 370px) {
+  .popular-container p {
+    margin: 5px 0 30px 0;
+  }
 }
 
 #bnb-grey {
@@ -600,7 +715,7 @@ aside {
 @media(max-width: 768px) {
   .activities {
       margin: 10% 0 0 0;
-      height: 1760px;
+      height: 1985px;
   }
 }
 
@@ -626,7 +741,7 @@ aside {
 }
 
 .act-mars h4 {
-  margin: 2% 0 0 5%;
+  margin: 10px 0 0 5%;
 }
 
 .port {
@@ -839,7 +954,7 @@ footer {
 
 @media(max-width: 768px) {
   footer {
-    margin-top: 35%;
+    flex-direction: column;
   }
 }
 
