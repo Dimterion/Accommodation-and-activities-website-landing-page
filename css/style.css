@@ -12,6 +12,11 @@ html {
   font-family: 'Raleway', sans-serif;
 }
 
+a {
+  text-decoration: none;
+  color: black;
+}
+
 @media (min-width: 768px) and (max-width: 992px) {
   h4 {
     font-size: 14px;
@@ -647,6 +652,10 @@ aside {
   }
 }
 
+.popular-card a {
+  display: contents;
+}
+
 .popular-card img {
   object-fit: cover;
   width: 35%;
@@ -661,8 +670,8 @@ aside {
 
 @media(max-width: 768px) {
   .popular-card img {
-      width: 38%;
-      height: 150px;
+      width: 37%;
+      height: 156px;
   }
 }
 
@@ -678,7 +687,7 @@ aside {
 }
 
 .popular-container h4 {
-  margin: 0;
+  margin: 0 0 15px 0;
   width: 165px;
 }
 
@@ -715,7 +724,7 @@ aside {
 @media(max-width: 768px) {
   .activities {
       margin: 10% 0 0 0;
-      height: 1985px;
+      height: auto;
   }
 }
 
@@ -737,11 +746,12 @@ aside {
   .act-mars {
       flex-flow: row wrap;
       justify-content: space-around;
+      height: auto;
   }
 }
 
 .act-mars h4 {
-  margin: 10px 0 0 5%;
+  margin: 10px 0 0 10%;
 }
 
 .port {
