@@ -514,6 +514,18 @@ form button {
   padding: 0 3%;
 }
 
+@media(max-width: 992px) {
+  .container {
+    padding: 0 3% 0 8%;
+  }
+}
+
+@media(max-width: 768px) {
+  .container {
+    padding: 0 3%;
+  }
+}
+
 .container h4 {
   margin: 3% 0;
 }
@@ -522,8 +534,24 @@ form button {
   margin: 3% 0;
 }
 
+.stars {
+  display: inline-flex;
+}
+
 .fas.fa-star {
   color: #0065FC;
+}
+
+@media(max-width: 992px) {
+  .fas.fa-star {
+    font-size: 12px;
+  }
+}
+
+@media(max-width: 768px) {
+  .fas.fa-star {
+    font-size: initial;
+  }
 }
 
 #aub-grey {
@@ -664,11 +692,18 @@ aside {
 
 @media(max-width: 992px) {
   .popular-card img {
-      width: 40%;
+      width: 95px;
   }
 }
 
 @media(max-width: 768px) {
+  .popular-card img {
+      width: 130px;
+      height: 156px;
+  }
+}
+
+@media(max-width: 370px) {
   .popular-card img {
       width: 37%;
       height: 156px;
@@ -698,7 +733,7 @@ aside {
 }
 
 .popular-container p {
-  margin: -15px 0 30px 0;
+  margin: -20px 0 30px 0;
 }
 
 @media(max-width: 370px) {
