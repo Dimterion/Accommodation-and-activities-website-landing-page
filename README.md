@@ -1,10 +1,10 @@
-# Accommodation&Activities website landing page
+# Accommodation and activities website landing page
 
 OpenClassrooms project
 
 ## Link to the website
 
-[Booki - accommodation&activities website landing page](https://dimterion.github.io/Booki-Website/)
+[Booki - accommodation and activities website landing page](https://dimterion.github.io/Accommodation-and-activities-website-landing-page/)
 
 ## Built with
 
