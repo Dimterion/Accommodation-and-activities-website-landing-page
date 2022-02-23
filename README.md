@@ -1,11 +1,22 @@
-# Booki-Website
+# Accommodation&Activities website landing page
 
 OpenClassrooms project
 
 ## Link to the website
 
-[Booki](https://dimterion.github.io/Booki-Website/)
+[Booki - accommodation&activities website landing page](https://dimterion.github.io/Booki-Website/)
 
-### Built with
+## Built with
 
 HTML, CSS
+
+# Task
+
+- Build a landing page for a website that helps its users to find accommodation and activities in a town of their choosing
+- Use provided mockups, specifications and design
+- Create a page adapted for mobile, tablet and desktop formats
+
+## Project goals
+
+- Integrate web content according to a mockup using HTML & CSS
+- Implement a responsive layout
